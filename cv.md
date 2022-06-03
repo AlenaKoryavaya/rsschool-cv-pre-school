@@ -9,7 +9,7 @@
 
 ## Summary
 
-I want to learn a new profession and get a desired job offer. I started studying the frontend myself six months ago. I want to strengthen my existing knowledge, improve my JS and get experience with real developers and real projects.
+I want to learn a new profession and get a desired job offer. I started studying the frontend myself six months ago. I want to strengthen my existing knowledge, improve my JavaScript and get experience with real developers and real projects.
 
 ## Skills
 
@@ -20,19 +20,21 @@ I want to learn a new profession and get a desired job offer. I started studying
 
 ## Code example
 
-`
+Get your random wish for day.
+
+```
 function getRandomWish(arr) {
-btn.addEventListener("click", () => {
-function generateWish() {
-let randomInd = arr[Math.floor(Math.random() * 6)];
-textWish.innerHTML = randomInd.text;
-authorWish.innerHTML = randomInd.author;
-}
-generateWish();
+    btn.addEventListener("click", () => {
+        function generateWish() {
+        let randomInd = arr[Math.floor(Math.random() * 6)];
+        textWish.innerHTML = randomInd.text;
+        authorWish.innerHTML = randomInd.author;
+    }
+    generateWish();
 });
 
-getRandomWish(someArray);  
-`
+getRandomWish(someArray);
+```
 
 ## Education
 
