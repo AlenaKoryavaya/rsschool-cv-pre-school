@@ -39,7 +39,6 @@
     text-transform: uppercase;
 }
 .header__subtitle {
-    margin-bottom: 60px;
     text-transform: uppercase;
 }
 .header__subtitle a {
@@ -49,7 +48,7 @@
 }
 /*----- Info under photo ------*/
 .contacts {
-    padding-left: 25px;
+    padding-left: 65px;
 }
 .contacts__info {
     display: flex;
