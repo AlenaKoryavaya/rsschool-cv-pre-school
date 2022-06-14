@@ -5,143 +5,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald&display=swap"
-        rel="stylesheet">
-    <!-- Icons -->
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/aaf2946756.js" crossorigin="anonymous"></script>
     <title>cv</title>
 </head>
 
 <body>
 
-    <section class="container">
-        <div class="container__inner">
-            <!-- Left part -->
-            <div class="container__inner_left">
-                <figure>
-                    <img class="img" src="./img/img.jpg" alt="Alena Koryavaya">
-                </figure>
-                <header class="header">
-                    <h2 class="header__title">Alena Koryavaya</h2>
-                    <h4 class="header__subtitle">RS School student<br>
-                        JS course - stage 0</h4>
-                </header>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="#about">About me</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#experience">Experience</a></li>
+                <li><a class="nav-link" href="#aducation">Aducation</a></li>
+                <li><a class="nav-link" href="#code">Code</a></li>
+            </ul>
+        </nav>
+        <div class="intro">
+            <figure class="intro__photo">
+                <img class="img" src="./assets/img/img.jpg" alt="Photo Alena Koryavaya">
+            </figure>
+            <div class="inrto__header">
+                <h1 class="header__title">Alena Koryavaya</h1>
+                <h2 class="header__subtitle">RS School student</h2>
+            </div>
+        </div>
+    </header>
 
-                <section class="contacts">
-                    <div class="contacts__info">
+    <main class="two-columns">
+
+        <section class="left-column">
+            <div class="contacts">
+                <h2 class="title">Contacts</h2>
+                <ul>
+                    <li class="contacts__list">
                         <i class="icon fa-solid fa-location-dot"></i>
-                        <a class="link" href="https://goo.gl/maps/FCfwVZFN5KdUHkLq9" title="Location"
+                        <a class="contacts-link" href="https://goo.gl/maps/FCfwVZFN5KdUHkLq9" title="Location"
                             target="_blank">Minsk,
                             Belarus</a>
-                    </div>
-                    <div class="contacts__info">
+                    </li>
+                    <li class="contacts__list">
                         <i class="icon fa-solid fa-phone"></i>
-                        <a class="link" href="tel:+375336373867"
-                            title="Phone">+375&nbsp;33&nbsp;637&#8209;38&#8209;67</a>
-                    </div>
-                    <div class="contacts__info">
+                        <a class="contacts-link" href="tel:+375336373867" title="Phone">
+                            375&nbsp;33&nbsp;637&#8209;38&#8209;67</a>
+                    </li>
+                    <li class="contacts__list">
                         <i class="icon fa-solid fa-envelope"></i>
-                        <a class="link" href="mailto:elena.koryavaya@gmail.com" title="Email">
-                            elena.koryavaya@gmail.com</a>
-                    </div>
-                    <div class="contacts__info">
-                        <i class="icon fa-brands fa-github"></i>
-                        <a class="link" href="https://github.com/AlenaKoryavaya/AlenaKoryavaya.git" title="GitHub"
-                            target="_blank">@alenakoryavaya</a>
-                    </div>
-                    <div class="contacts__info">
+                        <a class="contacts-link" href="mailto:elena.koryavaya@gmail.com"
+                            title="Email">elena.koryavaya&#64;gmail.com</a>
+                    </li>
+                    <li class="contacts__list">
                         <i class="icon fa-brands fa-discord"></i>
-                        <a class="link" href="https://discord.com/" title="Discord" target="_blank">Alena Koryavaya</a>
-                    </div>
-                </section>
+                        <a class="contacts-link" href="https://discord.com/" title="Discord" target="_blank">Alena
+                            Koryavaya</a>
+                    </li>
+                </ul>
             </div>
-            <aside class="container__inner_right">
-                <!-- About me -->
-                <article class="about">
-                    <h1 class="about__title">About muself</h1>
-                    <p>I am a beginner in programming. I've been studying the basics of HTML, CSS, Js myself with the
-                        help
-                        of video on
-                        YouTube and reading documentation.</p>
-                    <p>I like programming this interesting and exciting direction that
-                        develops every day. My goal is to master JS at a good level. My dream is to become a JS
-                        developer
-                        and get my first experience working with a real development team and on a real project.</p>
-                </article>
+            <div id="skills" class="skills">
+                <h2 class="title">Skills</h2>
+                <ul class="skills-list">
+                    <li class="skills-item">HTML5</li>
+                    <li class="skills-item">CSS3</li>
+                    <li class="skills-item">SASS</li>
+                    <li class="skills-item">BEM</li>
+                    <li class="skills-item">JS basic</li>
+                    <li class="skills-item">Git&GitHub</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h2 class="title">Languages</h2>
+                <ul class="skills-list">
+                    <li class="skills-item">Russian &#8208; native</li>
+                    <li class="skills-item">English &#8208; B1</li>
+                </ul>
+            </div>
+        </section>
 
-                <!-- Experience / Skills -->
-                <div class="block">
-                    <div class="block__item-left">
-                        <h1>Experience</h1>
-                        <div class="left-info">
-                            <h4>2014 - 2016</h4>
-                            <p>Minsk Regional Agricultural Research Station - Agrotechnologist</p>
-                            <h4>2017 - 2019</h4>
-                            <p>Zamok mall, Minsk - Sales manager</p>
-                            <h4>2019 - 2020</h4>
-                            <p>"WeHouse GYM" Minsk - Manager</p>
-                        </div>
-                    </div>
-                    <div class="block__item-right">
-                        <h1>Skills</h1>
-                        <div class="right-info">
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS, SASS, BEM methodology</li>
-                                <li>JavaScript Basics</li>
-                                <li>Git, GitHub</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Aducation -->
-                <div class="block">
-                    <div class="block__item-left">
-                        <h1>Aducation</h1>
-                        <div class="left-info">
-                            <h4>2010 - 2014</h4>
-                            <p>State Technical College n.a. B.E. Lobanka - Faculty of Agronomy, Agrotechnologist</p>
-                            <h4>2020 - ...</h4>
-                            <p>Moscow International University - Faculty of Economics and Management, Management of
-                                Organization</p>
-                        </div>
-                    </div>
-                    <!-- Languages -->
-                    <div class="block__item-right">
-                        <h1>Languages</h1>
-                        <div class="right-info">
-                            <ul>
-                                <li>Russian- native</li>
-                                <li>English - intermediate</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Code  -->
-                <article class="about">
-                    <h1 class="about__title">Code example</h1>
-                    <p>Complete the solution so that it reverses the string passed into it.</p>
-                </article>
+        <section class="right-column">
+            <div id="about">
+                <h2 class="title">About myself</h2>
+                <p class="title-text">Not long time ago I desided to change my profession and now I am a beginner in
+                    programming. But I already have basic knowledge of HTML, CSS and JavaScript.
+                    Within a few months I've been learning them with the help of different video tutorials and also
+                    reading documentation.<br>
+                    I like programming this interesting and exciting direction that develops every day. My goal is to
+                    master JS at a good level. My dream is to become a JS developer and get my first experience working
+                    with a real development team and on a real project.</p>
+            </div>
 
-                <pre>
-                <code>                function solution(str) {
-                   let reverseWord = str.split('').reverse().join('');
-                   return reverseWord;
-                }
-                solution();</code>
-                </pre>
-            </aside>
+            <div id="aducation" class="aducation">
+                <h2 class="title">Aducation</h2>
+                <div class="title__info">
+                    <div class="title__info-years">2010 &#8208; 2014</div>
+                    <h4>State Technical College n.a. B.E. Lobanka</h4>
+                    <p>Faculty of Agronomy, Agrotechnologist</p>
+                </div>
+                <div class="title__info">
+                    <div class="title__info-years">2020 &#8208; to date</div>
+                    <h4>Moscow International University</h4>
+                    <p>Faculty of Economics and Management</p>
+                </div>
+            </div>
+
+            <div id="experience" class="experience">
+                <h2 class="title">Work experience</h2>
+                <p>I have no previous work experience as a developer yet but I&#39;m moving in that direction and I
+                    believe that one day I&#39;ll become a Js developer.</p>
+                <p>The work experience which I have:</p>
+                <br>
+                <div class="title__info">
+                    <div class="title__info-years">2014 &#8208; 2016</div>
+                    <h4>Agronomist</h4>
+                    <p>Minsk Regional Agricultural Research Station</p>
+                </div>
+                <div class="title__info">
+                    <div class="title__info-years">2017 &#8208; 2019</div>
+                    <h4>Sales manager</h4>
+                    <p>Zamok Mall , branded trade</p>
+                </div>
+                <div class="title__info">
+                    <div class="title__info-years">2019 &#8208; 2020</div>
+                    <h4>Manager</h4>
+                    <p>WeHouse , GYM</p>
+                </div>
+            </div>
+
+            <div id="code">
+                <h2 class="title">Code example</h2>
+                <p>Complete the solution so that it reverses the string passed into it.</p>
+                <pre class="code__item">
+                    <code class="code__text">
+    function solution(str) {
+        let reverseWord = 
+        str.split('').reverse().join('');
+            return reverseWord;
+        }
+    solution();
+                    </code>
+                 </pre>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__git">
+            <i class="icon-git fa-brands fa-github"></i>
+            <a class="link-git" href="https://github.com/AlenaKoryavaya/AlenaKoryavaya.git" target="_blank">My
+                GitHub</a>
         </div>
+        <p class="footer__copyright">&#169;2022</p>
+        <div class="footer__rs-school">
+            <a class="rs-school-link" href="https://rs.school/js-stage0/" title="JavaScript/Front-end. Stage 0"
+                target="_blank">
+                <img class="rs-school-icon" src="./assets/img/rs-icon.png" alt="">
+            </a>
+        </div>
+    </footer>
 
-        <footer class="footer">
-            <p class="footer__copyright"><b>© 2022</b></p>
-            <figure>
-                <a class="footer__link" href="https://rs.school/" title="rs.school" target="_blank">visit<img
-                        class="footer__icon" src="./img/rs-icon.png" alt=""></a>
-            </figure>
-        </footer>
-    </section>
 
 </body>
 
