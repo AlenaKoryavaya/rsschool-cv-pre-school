@@ -13,22 +13,26 @@
 <body>
 
     <header>
-        <nav>
-            <ul class="nav-list">
-                <li><a class="nav-link" href="#about">About me</a></li>
-                <li><a class="nav-link" href="#skills">Skills</a></li>
-                <li><a class="nav-link" href="#experience">Experience</a></li>
-                <li><a class="nav-link" href="#aducation">Aducation</a></li>
-                <li><a class="nav-link" href="#code">Code</a></li>
-            </ul>
-        </nav>
-        <div class="intro">
-            <figure class="intro__photo">
-                <img class="img" src="./assets/img/img.jpg" alt="Photo Alena Koryavaya">
-            </figure>
-            <div class="inrto__header">
-                <h1 class="header__title">Alena Koryavaya</h1>
-                <h2 class="header__subtitle">RS School student</h2>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#about">About me</a></li>
+                    <li><a class="nav-link" href="#contacts">Contacts</a></li>
+                    <li><a class="nav-link" href="#skills">Skills</a></li>
+                    <li><a class="nav-link" href="#languages">Languages</a></li>
+                    <li><a class="nav-link" href="#experience">Experience</a></li>
+                    <li><a class="nav-link" href="#aducation">Aducation</a></li>
+                    <li><a class="nav-link" href="#code">Code</a></li>
+                </ul>
+            </nav>
+            <div class="intro">
+                <figure class="intro__photo">
+                    <img class="img" src="./assets/img/img.jpg" alt="Photo Alena Koryavaya">
+                </figure>
+                <div class="inrto__header">
+                    <h1 class="header__title">Alena Koryavaya</h1>
+                    <h2 class="header__subtitle">RS School student</h2>
+                </div>
             </div>
         </div>
     </header>
@@ -36,7 +40,7 @@
     <main class="two-columns">
 
         <section class="left-column">
-            <div class="contacts">
+            <div class="contacts" id="contacts">
                 <h2 class="title">Contacts</h2>
                 <ul>
                     <li class="contacts__list">
@@ -62,7 +66,7 @@
                     </li>
                 </ul>
             </div>
-            <div id="skills" class="skills">
+            <div class="skills" id="skills">
                 <h2 class="title">Skills</h2>
                 <ul class="skills-list">
                     <li class="skills-item">HTML5</li>
@@ -73,7 +77,7 @@
                     <li class="skills-item">Git&GitHub</li>
                 </ul>
             </div>
-            <div class="skills">
+            <div class="skills" id="languages">
                 <h2 class="title">Languages</h2>
                 <ul class="skills-list">
                     <li class="skills-item">Russian &#8208; native</li>
@@ -94,7 +98,7 @@
                     with a real development team and on a real project.</p>
             </div>
 
-            <div id="aducation" class="aducation">
+            <div class="aducation" id="aducation">
                 <h2 class="title">Aducation</h2>
                 <div class="title__info">
                     <div class="title__info-years">2010 &#8208; 2014</div>
@@ -108,7 +112,7 @@
                 </div>
             </div>
 
-            <div id="experience" class="experience">
+            <div class="experience" id="experience">
                 <h2 class="title">Work experience</h2>
                 <p>I have no previous work experience as a developer yet but I&#39;m moving in that direction and I
                     believe that one day I&#39;ll become a Js developer.</p>
@@ -137,8 +141,7 @@
                 <pre class="code__item">
                     <code class="code__text">
     function solution(str) {
-        let reverseWord = 
-        str.split('').reverse().join('');
+        let reverseWord = str.split('').reverse().join('');
             return reverseWord;
         }
     solution();
